@@ -1,0 +1,74 @@
+:root {
+  font-family: "Trebuchet MS", "Avenir Next", sans-serif;
+  color: #f7f9fb;
+  background: radial-gradient(circle at 30% 20%, #1f6e55, #0b2f28 65%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.table-wrap {
+  flex: 1;
+  min-height: 320px;
+  position: relative;
+}
+
+.hud {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(8, 18, 16, 0.9);
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: #fff;
+  background: #255c4a;
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+input[type="range"] {
+  width: 180px;
+}
+
+@media (orientation: portrait) {
+  .table-wrap {
+    min-height: 260px;
+  }
+
+  .hud {
+    padding: 8px;
+  }
+}
